@@ -8,6 +8,7 @@ import AdminPanel from './pages/AdminPanel';
 import './index.css';
 
 function PrivateRoute({ children }) {
+    const { user, loading } = useAuth();
   
   if (loading) {
     return (
