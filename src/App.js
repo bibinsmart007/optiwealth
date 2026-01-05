@@ -31,8 +31,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           
           {/* Protected Routes */}
-          <Route 
-                      <Route path="/dashboard" element={<Navigate to="/admin" replace />>
+          <Route path="/dashboard" element={<Navigate to="/admin" replace />} />
           
           {/* Catch all - redirect to home */}
           <Route path="*" element={<Navigate to="/" replace />} />
