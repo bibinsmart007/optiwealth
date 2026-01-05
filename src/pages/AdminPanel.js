@@ -18,7 +18,7 @@ function AdminPanel() {
   };
 
   return (
-    <div style={styles.container>;
+    <div style={styles.container>
       <div style={styles.header}>
         <div style={styles.headerContent}>
           <h1 style={styles.title}>OptiWealth Control Panel</h1>
