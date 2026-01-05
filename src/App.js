@@ -5,11 +5,9 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import AdminPanel from './pages/AdminPanel';
-import Dashboard from './Dashboard';
 import './index.css';
 
 function PrivateRoute({ children }) {
-  const { user, loading } = useAuth();
   
   if (loading) {
     return (
@@ -34,21 +32,7 @@ function App() {
           
           {/* Protected Routes */}
           <Route 
-            path="/dashboard" 
-            element={
-              <PrivateRoute>
-                <Dashboard />
-              </PrivateRoute>
-            } 
-          />
-          <Route 
-            path="/admin" 
-            element={
-              <PrivateRoute>
-                <AdminPanel />
-              </PrivateRoute>
-            } 
-          />
+                      <Route path="/dashboard" element={<Navigate to="/admin" replace />
           
           {/* Catch all - redirect to home */}
           <Route path="*" element={<Navigate to="/" replace />} />
