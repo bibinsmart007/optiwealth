@@ -18,7 +18,6 @@ function AdminPanel() {
   };
 
   return (
-        <>
     <div style={styles.container>
       <div style={styles.header}>
         <div style={styles.headerContent}>
@@ -214,7 +213,7 @@ POST /api/transactions
         </div>
       </div>
     </div>
-    </>  );
+      );
 }
 
 const styles = {
