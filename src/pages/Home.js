@@ -82,9 +82,9 @@ function Home() {
       <footer className="home-footer">
         <p>© 2026 OptiWealth. All rights reserved.</p>
         <div className="footer-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Contact</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="/contact">Contact</a>
         </div>
       </footer>
     </div>

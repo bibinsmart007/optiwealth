@@ -18,9 +18,9 @@ function AdminPanel() {
   };
 
   return (
-        <>
-    <div style={styles.container>
-      <div style={styles.header}>
+    <>
+      <div style={styles.container}>
+        <div style={styles.header}>
         <div style={styles.headerContent}>
           <h1 style={styles.title}>OptiWealth Control Panel</h1>
           <div style={styles.userInfo}>
@@ -214,7 +214,8 @@ POST /api/transactions
         </div>
       </div>
     </div>
-    </>  );
+    </>
+  );
 }
 
 const styles = {
