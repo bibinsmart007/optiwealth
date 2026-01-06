@@ -4,7 +4,7 @@ import { AuthProvider, useAuth } from './contexts/AuthContext';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import AdminPanel from './pages/AdminPanel';
+// import AdminPanel from './pages/AdminPanel';
 import './index.css';
 
 function PrivateRoute({ children }) {
